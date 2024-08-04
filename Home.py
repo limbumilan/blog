@@ -2,6 +2,7 @@ import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
 from PIL import Image
+from streamlit_navigation_bar import st_navbar
 
 
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
