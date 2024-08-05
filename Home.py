@@ -29,85 +29,81 @@ local_css("style/style.css")
 
 # ---- LOAD ASSETS ----
 lottie_coding = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_fcfjwiyb.json")
-img_contact_form = Image.open("images/Phedaplogo.png")
-img_lottie_animation = Image.open("images/praa.jpg")
+img_contact_form = Image.open("images/first.jpg")
+img_lottie_animation = Image.open("images/ramri.jpg")
 
 # ---- HEADER SECTION ----
 with st.container():
-    st.subheader("Hi, I am Milan :wave:")
-    st.title("A permanent resident of Myanglung Terhathum")
+    st.subheader("Hi, Anjana  :wave:")
+    st.title("I will always love you...from milan")
     st.write(
-        "I am passionate about finding ways to use Python and VBA to be more efficient and effective in business settings."
+        "I came up with an idea to surprise you in our 1st anniversary(2081-04-19) by messaging via website. But things were slower and I could not buid it in that day. I'm sorry for the delay."
     )
-    st.write("[Learn More >](https://pythonandvba.com)")
+    st.write("Please!! म बाट धेरै गल्ति हुन्छन माफ गर्नु है।")
 
 # ---- WHAT I DO ----
 with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
     with left_column:
-        st.header("What I do")
+        st.header("first date")
         st.write("##")
         st.write(
             """
-            On my YouTube channel I am creating tutorials for people who:
-            - are looking for a way to leverage the power of Python in their day-to-day work.
-            - are struggling with repetitive tasks in Excel and are looking for a way to use Python and VBA.
-            - want to learn Data Analysis & Data Science to perform meaningful and impactful analyses.
-            - are working with Excel and found themselves thinking - "there has to be a better way."
-
-            If this sounds interesting to you, consider subscribing and turning on the notifications, so you don’t miss any content.
+            I was too Afraid to see you so near to me. How do i express, mix of excitement and nerves?
+            I felt a bit of pressure to make a good impression. Maile timro hand hold gareko ta yaad xa ni oi!!????
+            ma kaami raheko thye varai samma, body shake vairako thyu. tmlai thaha xa ni? first ma dekhda nai out dress
+            ma kahile dekheko thiyena i was so shocked. jirringa thyu mero sarir ta. tyo bela hjurko ankha dekhna layak thyu maybe, 
+            timi pani lajako nai thyu hola. 
             """
+
         )
-        st.write("[YouTube Channel >](https://youtube.com/c/CodingIsFun)")
+        
     with right_column:
         st_lottie(lottie_coding, height=300, key="coding")
 
 # ---- PROJECTS ----
 with st.container():
     st.write("---")
-    st.header("My Projects")
+    st.header("मेरो माया")
     st.write("##")
     image_column, text_column = st.columns((1, 2))
     with image_column:
-        st.image(img_lottie_animation)
+        
+        st.image(img_contact_form)
+        st.image()
     with text_column:
-        st.subheader("Integrate Lottie Animations Inside Your Streamlit App")
+        st.subheader("cutiePie")
         st.write(
             """
-            Learn how to use Lottie Files in Streamlit!
-            Animations make our web app more engaging and fun, and Lottie Files are the easiest way to do it!
-            In this tutorial, I'll show you exactly how to do it
+            my seuci budi!!. it is just the begining. I wanna live my life with you. may i find ways to
+            love you more and more. How can i define my love to you budi. Presents kehi navayeni letter chai ramro patham
+            vaneko late vayo. sorry!!. please stay with me in my rise and fall. ma maya garxu budi timlai tmle socheko vanda
+            dherai. 
             """
         )
-        st.markdown("[Watch Video...](https://youtu.be/TXSOitGoINE)")
+        
 with st.container():
     image_column, text_column = st.columns((1, 2))
-    with image_column:
-        st.image(img_contact_form)
-    with text_column:
-        st.subheader("How To Add A Contact Form To Your Streamlit App")
+    
+with text_column:
+        st.subheader("")
         st.write(
-            """
-            Want to add a contact form to your Streamlit website?
-            In this video, I'm going to show you how to implement a contact form in your Streamlit app using the free service ‘Form Submit’.
-            """
+            
         )
-        st.markdown("[Watch Video...](https://youtu.be/FOULV9Xij_8)")
+        
 
 # ---- CONTACT ----
 with st.container():
     st.write("---")
-    st.header("Get In Touch With Me!")
+    st.header("केहि भन्ने भए हुन्छ है, बुडु...")
     st.write("##")
 
     # Documention: https://formsubmit.co/ !!! CHANGE EMAIL ADDRESS !!!
     contact_form = """
     <form action="https://formsubmit.co/subbapiyush776@gmail.com" method="POST">
         <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="Your email" required>
-        <textarea name="message" placeholder="Your message here" required></textarea>
+        <textarea name="message" placeholder="your message here" required></textarea>
         <button type="submit">Send</button>
     </form>
     """
