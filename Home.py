@@ -60,7 +60,7 @@ with st.container():
         )
         
     with right_column:
-        st_lottie(lottie_coding, height=300, key="coding")
+        st.image(img_contact_form)
 
 # ---- PROJECTS ----
 with st.container():
@@ -69,9 +69,8 @@ with st.container():
     st.write("##")
     image_column, text_column = st.columns((1, 2))
     with image_column:
+        st.image(img_lottie_animation)
         
-        st.image(img_contact_form)
-        st.image()
     with text_column:
         st.subheader("cutiePie")
         st.write(
